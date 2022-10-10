@@ -71,7 +71,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "data_clientes",
+						"activity": "Validation1",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -130,7 +130,7 @@
 				"type": "Validation",
 				"dependsOn": [
 					{
-						"activity": "Clientes Copia",
+						"activity": "data_clientes",
 						"dependencyConditions": [
 							"Succeeded"
 						]
