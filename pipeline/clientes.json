@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_fl9",
+				"name": "data_clientes",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -67,11 +67,11 @@
 				]
 			},
 			{
-				"name": "Copy data1",
+				"name": "Clientes Copia",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Copy_fl9",
+						"activity": "data_clientes",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -124,6 +124,27 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Validation1",
+				"type": "Validation",
+				"dependsOn": [
+					{
+						"activity": "Clientes Copia",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "SourceDataset_fl9",
+						"type": "DatasetReference"
+					},
+					"timeout": "0.12:00:00",
+					"sleep": 10
+				}
 			}
 		],
 		"annotations": []
