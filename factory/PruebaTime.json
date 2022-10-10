@@ -1,0 +1,9 @@
+{
+	"name": "PruebaTime",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c0a32362-cb28-4318-86ab-4846f2581ff6",
+		"tenantId": "8e15cde1-dcef-4e8d-b5c2-8783eed31fc3"
+	}
+}
