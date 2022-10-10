@@ -1,0 +1,71 @@
+{
+	"name": "SourceDataset_xpm",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "azuretime"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Fecha",
+				"type": "String"
+			},
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Num_Boleta",
+				"type": "String"
+			},
+			{
+				"name": "Cantidad",
+				"type": "String"
+			},
+			{
+				"name": "Pais_Ventas",
+				"type": "String"
+			},
+			{
+				"name": "Anho",
+				"type": "String"
+			},
+			{
+				"name": "Mes",
+				"type": "String"
+			},
+			{
+				"name": "Dia",
+				"type": "String"
+			},
+			{
+				"name": "Nombre",
+				"type": "String"
+			},
+			{
+				"name": "Descripcion",
+				"type": "String"
+			},
+			{
+				"name": "Precio Unitario",
+				"type": "String"
+			},
+			{
+				"name": "Ingreso Total",
+				"type": "String"
+			}
+		]
+	}
+}
