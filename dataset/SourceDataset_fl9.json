@@ -1,0 +1,56 @@
+{
+	"name": "SourceDataset_fl9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Clientes_Modificado.csv",
+				"container": "azuretime"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "RUT",
+				"type": "String"
+			},
+			{
+				"name": "NOMBRE",
+				"type": "String"
+			},
+			{
+				"name": "FECHA_NAC",
+				"type": "String"
+			},
+			{
+				"name": "TIPO_CLIENTE",
+				"type": "String"
+			},
+			{
+				"name": "MONTO",
+				"type": "String"
+			},
+			{
+				"name": "PUNTAJE_CREDITICIO",
+				"type": "String"
+			},
+			{
+				"name": "BONO",
+				"type": "String"
+			}
+		]
+	}
+}
