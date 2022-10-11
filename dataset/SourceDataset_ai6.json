@@ -1,0 +1,56 @@
+{
+	"name": "SourceDataset_ai6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Clientes_Modificado.txt",
+				"container": "pruebatime2"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "0",
+				"type": "String"
+			},
+			{
+				"name": "21.930.631-4",
+				"type": "String"
+			},
+			{
+				"name": "Isabel Blanca Marín Díaz",
+				"type": "String"
+			},
+			{
+				"name": "1997/4/13",
+				"type": "String"
+			},
+			{
+				"name": "C",
+				"type": "String"
+			},
+			{
+				"name": "5407949",
+				"type": "String"
+			},
+			{
+				"name": "1.17",
+				"type": "String"
+			},
+			{
+				"name": "4622178.632478633",
+				"type": "String"
+			}
+		]
+	}
+}
